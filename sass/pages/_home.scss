@@ -1,8 +1,7 @@
 .main{
     margin-left: 24rem;
-    
-    @include respond('tab-land'){
-        margin-left: 14rem;
+    @include respond('tab-port'){
+        margin-left: 0;
     }
 }
 .section-a{
@@ -10,9 +9,7 @@
     font-weight: 300;
 }
 .section-d{
-    :not(:last-child){
-        margin-bottom: 3rem;
-    }
+    
 }
 .section-e{
     padding: 5rem;

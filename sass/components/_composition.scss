@@ -35,6 +35,7 @@
     font-size: 1.4rem;
     background-color: white;
     position: relative;
+    letter-spacing: 0.102rem;
     &__header{
         border-bottom: 0.2rem solid black;
         display: flex;
@@ -89,6 +90,8 @@
     margin: 0 auto;
     background-color: white;
     padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    
     &__header{
         width: 100%;
         border-bottom: 1px solid #ddd;
@@ -106,13 +109,25 @@
     &__logo{
         height: 100px;
         // padding-bottom: 2rem;
-        margin-bottom: 0 !important;;
+        margin-bottom: 0 !important;
+        @include respond('tab-port'){
+            height: 5rem;
+            width: 5rem;
+        }
+
     }
     &__name{
         font-size: 2rem;
         margin: 0;
         margin-top: 1rem;
-        margin-left: 3rem;
+    }
+    &__item{
+        text-align: center;
+        border-bottom: $border-color-gray-light;
+        
+        @include respond('tab-port'){
+            margin-bottom: 3rem;
+        }
     }
 }
 .block{
@@ -123,5 +138,4 @@
 .contact__link:visited{
     font-size: 2rem;
     color: #009688 !important;
-
-}
+};

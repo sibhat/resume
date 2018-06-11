@@ -32,6 +32,7 @@ body {
 .icontainer{
     background-image: linear-gradient(rgba(253, 253, 253, 0.856), rgba(245, 241, 241, 0.786)), url(../img/bg1.jpg);
     background-attachment: fixed;
+    
     @include respond(tab-port) {
         padding: 0;
     }

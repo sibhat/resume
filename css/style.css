@@ -112,14 +112,27 @@ body {
   padding-left: 1.5rem;
   font-weight: 700;
   font-size: 3.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .title {
+      font-size: 2.6rem;
+      letter-spacing: 0.102rem; } }
 
 .paragaph {
   font-size: 2.5rem;
   margin-bottom: 2.3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .paragaph {
+      font-size: 2rem;
+      letter-spacing: 0.12rem;
+      font-weight: 400; } }
 
 .slogen {
   font-size: 2.5rem;
   font-weight: 500; }
+  @media only screen and (max-width: 56.25em) {
+    .slogen {
+      font-size: 2.3rem;
+      letter-spacing: 0.12rem; } }
 
 .teal-text {
   color: #009688 !important; }
@@ -162,6 +175,9 @@ body {
 
 .underline {
   text-decoration: underline #24a77b; }
+
+.svg-inline--fa {
+  color: #24a77b; }
 
 .btn,
 .btn:visited {
@@ -232,7 +248,8 @@ body {
   padding: 4rem;
   font-size: 1.4rem;
   background-color: white;
-  position: relative; }
+  position: relative;
+  letter-spacing: 0.102rem; }
   .page__header {
     border-bottom: 0.2rem solid black;
     display: flex;
@@ -276,7 +293,8 @@ body {
 .skill {
   margin: 0 auto;
   background-color: white;
-  padding: 3rem 2rem; }
+  padding: 3rem 2rem;
+  margin-bottom: 3rem; }
   .skill__header {
     width: 100%;
     border-bottom: 1px solid #ddd;
@@ -291,11 +309,20 @@ body {
   .skill__logo {
     height: 100px;
     margin-bottom: 0 !important; }
+    @media only screen and (max-width: 56.25em) {
+      .skill__logo {
+        height: 5rem;
+        width: 5rem; } }
   .skill__name {
     font-size: 2rem;
     margin: 0;
-    margin-top: 1rem;
-    margin-left: 3rem; }
+    margin-top: 1rem; }
+  .skill__item {
+    text-align: center;
+    border-bottom: 1px solid #ddd; }
+    @media only screen and (max-width: 56.25em) {
+      .skill__item {
+        margin-bottom: 3rem; } }
 
 .block {
   display: block; }
@@ -400,16 +427,13 @@ nav,
 
 .main {
   margin-left: 24rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .main {
-      margin-left: 14rem; } }
+      margin-left: 0; } }
 
 .section-a {
   width: 100%;
   font-weight: 300; }
-
-.section-d :not(:last-child) {
-  margin-bottom: 3rem; }
 
 .section-e {
   padding: 5rem;
