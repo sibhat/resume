@@ -84,6 +84,15 @@ body {
   font-weight: 300;
   line-height: 1.5;
   margin: 1rem 0; }
+  @media only screen and (max-width: 75em) {
+    .iheading__primary {
+      font-size: 4.5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .iheading__primary {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .iheading__primary {
+      font-size: 3rem; } }
 
 .heading__secondary {
   font-size: 3.5rem;
@@ -202,10 +211,16 @@ body {
     text-transform: uppercase; }
 
 .section-a__title {
-  width: 90rem;
+  max-width: 90rem;
   margin: 3rem auto; }
   .section-a__title:first-child {
     margin-left: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .section-a__title {
+      width: 90%; } }
+  @media (max-width: 900rem) {
+    .section-a__title {
+      width: 90%; } }
 
 .content {
   margin: 3rem 2rem; }
@@ -302,6 +317,15 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 65rem; }
+    @media only screen and (max-width: 75em) {
+      .iheader .center {
+        width: 60rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .iheader .center {
+        width: 50rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .iheader .center {
+        max-width: 34rem; } }
   .iheader__img img {
     width: 10rem;
     height: 10rem; }
@@ -324,6 +348,10 @@ body {
       letter-spacing: 0.3rem; }
     .iheader--link img {
       transition: all .3s; }
+    @media only screen and (max-width: 37.5em) {
+      .iheader--link {
+        margin-bottom: 0rem;
+        margin-top: 10rem; } }
   .iheader--link:hover img {
     transform: translateY(1rem); }
 
@@ -336,6 +364,10 @@ nav,
   line-height: inherit;
   color: inherit;
   border-right: 1px solid #ddd; }
+  @media only screen and (max-width: 75em) {
+    nav,
+    .inav {
+      display: none; } }
   nav__name,
   .inav__name {
     height: 22rem;
@@ -368,6 +400,9 @@ nav,
 
 .main {
   margin-left: 24rem; }
+  @media only screen and (max-width: 75em) {
+    .main {
+      margin-left: 0; } }
 
 .section-a {
   width: 100%;

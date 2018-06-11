@@ -11,10 +11,16 @@
 }
 .section-a{
     &__title{
-        width: 90rem;
+        max-width: 90rem;
         margin: 3rem auto;
         &:first-child{
             margin-left: 2rem;
+        }
+        @include respond('tab-land'){
+            width: 90%;
+        } 
+        @media(max-width: 900rem){
+            width: 90%;
         }
     }
 }

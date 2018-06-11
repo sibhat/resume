@@ -9,6 +9,15 @@
         transform: translate(-50%, -50%);
         text-align: center;
         width: 65rem;
+        @include respond('tab-land'){
+            width: 60rem;
+        }
+        @include respond('tab-port'){
+            width: 50rem;
+        }
+        @include respond('phone'){
+            max-width: 34rem;
+        }
     }
     &__img{        
         img{
@@ -40,6 +49,10 @@
         img{
             transition: all .3s;
             // transform: translate(0);
+        }
+        @include respond('phone'){
+            margin-bottom: 0rem;
+            margin-top: 10rem;
         }
     }
     &--link:hover img{

@@ -7,6 +7,11 @@ nav,
     line-height: inherit;
     color: inherit;
     border-right: $border-color-gray-light;
+
+    @include respond('tab-land'){
+        display: none;
+    }
+    
     &__name{
         height: 22rem;
         text-align: center;
