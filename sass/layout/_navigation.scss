@@ -1,4 +1,3 @@
-nav,
 .inav{
     position: fixed;
     max-width: 24rem;
@@ -7,6 +6,7 @@ nav,
     line-height: inherit;
     color: inherit;
     border-right: $border-color-gray-light;
+    z-index: 1;
 
     @include respond('tab-port'){
         display: none;
@@ -46,4 +46,57 @@ nav,
         color: #333;
     }
 
+}
+.nav__humberger{
+    display: none;
+    height: 7rem;
+    width: 7rem;
+    background-color: white;
+    border-radius: 50%;
+    top: 3%;
+    right: 6%;
+    box-shadow: 0 1rem 1rem rgba(6, 134, 128, 0.123);
+    z-index: 20;
+    text-align: center;
+    @include respond('tab-port'){
+        display: inline-block;
+        position: fixed;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+
+    &__line{
+        margin-top: 3.5rem;
+    }
+
+    &__line,
+    &__line::before,
+    &__line::after{
+        width: 3rem;
+        height: 2px;
+        background-color: #333;
+        display: inline-block;
+        transition: all .4s;      
+        
+    }
+
+    &:hover  &__line::before{
+        margin: 0.5rem 0;
+    }
+
+    &__line::before,
+    &__line::after{
+        position: relative;
+        content: '';
+        left: 0;
+    }
+
+    &__line::before{
+        top: -2rem;
+    }
+
+    &__line::after{
+        bottom: 1.5rem;
+    }
 }

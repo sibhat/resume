@@ -110,6 +110,7 @@
         height: 100px;
         // padding-bottom: 2rem;
         margin-bottom: 0 !important;
+        height: 7rem;
         @include respond('tab-port'){
             height: 5rem;
             width: 5rem;

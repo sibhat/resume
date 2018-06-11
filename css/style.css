@@ -70,7 +70,10 @@ body {
 
 .icontainer {
   background-image: linear-gradient(rgba(253, 253, 253, 0.856), rgba(245, 241, 241, 0.786)), url(../img/bg1.jpg);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  max-width: 1900px;
+  margin: auto;
+  border: 1px solid #ddd; }
   @media only screen and (max-width: 56.25em) {
     .icontainer {
       padding: 0; } }
@@ -178,6 +181,9 @@ body {
 
 .svg-inline--fa {
   color: #24a77b; }
+
+.show {
+  display: block; }
 
 .btn,
 .btn:visited {
@@ -308,7 +314,8 @@ body {
     margin-bottom: 0 !important; }
   .skill__logo {
     height: 100px;
-    margin-bottom: 0 !important; }
+    margin-bottom: 0 !important;
+    height: 7rem; }
     @media only screen and (max-width: 56.25em) {
       .skill__logo {
         height: 5rem;
@@ -382,7 +389,6 @@ body {
   .iheader--link:hover img {
     transform: translateY(1rem); }
 
-nav,
 .inav {
   position: fixed;
   max-width: 24rem;
@@ -390,12 +396,11 @@ nav,
   background-color: #fff;
   line-height: inherit;
   color: inherit;
-  border-right: 1px solid #ddd; }
+  border-right: 1px solid #ddd;
+  z-index: 1; }
   @media only screen and (max-width: 56.25em) {
-    nav,
     .inav {
       display: none; } }
-  nav__name,
   .inav__name {
     height: 22rem;
     text-align: center;
@@ -403,27 +408,58 @@ nav,
     border-bottom: 1px solid #ddd;
     text-transform: uppercase;
     background-color: #fafafa; }
-  nav__item,
   .inav__item {
     padding-top: 3rem;
     list-style: none; }
-  nav__list,
   .inav__list {
     font-size: 1.9rem;
     padding-left: 5.5rem;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
     transition: all .3s; }
-    nav__list a,
     .inav__list a {
       text-decoration: none;
       margin-left: 1rem; }
-    nav__list:hover,
     .inav__list:hover {
       transform: scale(1.1); }
-  nav a,
   .inav a {
     color: #333; }
+
+.nav__humberger {
+  display: none;
+  height: 7rem;
+  width: 7rem;
+  background-color: white;
+  border-radius: 50%;
+  top: 3%;
+  right: 6%;
+  box-shadow: 0 1rem 1rem rgba(6, 134, 128, 0.123);
+  z-index: 20;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .nav__humberger {
+      display: inline-block;
+      position: fixed; } }
+  .nav__humberger:hover {
+    cursor: pointer; }
+  .nav__humberger__line {
+    margin-top: 3.5rem; }
+  .nav__humberger__line, .nav__humberger__line::before, .nav__humberger__line::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+    transition: all .4s; }
+  .nav__humberger:hover .nav__humberger__line::before {
+    margin: 0.5rem 0; }
+  .nav__humberger__line::before, .nav__humberger__line::after {
+    position: relative;
+    content: '';
+    left: 0; }
+  .nav__humberger__line::before {
+    top: -2rem; }
+  .nav__humberger__line::after {
+    bottom: 1.5rem; }
 
 .main {
   margin-left: 24rem; }
