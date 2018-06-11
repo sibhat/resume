@@ -8,7 +8,7 @@ nav,
     color: inherit;
     border-right: $border-color-gray-light;
 
-    @include respond('tab-land'){
+    @include respond('tab-port'){
         display: none;
     }
     

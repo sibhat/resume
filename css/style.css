@@ -364,7 +364,7 @@ nav,
   line-height: inherit;
   color: inherit;
   border-right: 1px solid #ddd; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     nav,
     .inav {
       display: none; } }
@@ -402,7 +402,7 @@ nav,
   margin-left: 24rem; }
   @media only screen and (max-width: 75em) {
     .main {
-      margin-left: 0; } }
+      margin-left: 14rem; } }
 
 .section-a {
   width: 100%;

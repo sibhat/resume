@@ -1,7 +1,8 @@
 .main{
     margin-left: 24rem;
+    
     @include respond('tab-land'){
-        margin-left: 0;
+        margin-left: 14rem;
     }
 }
 .section-a{
