@@ -1,0 +1,17 @@
+.main{
+    margin-left: 24rem;
+}
+.section-a{
+    width: 100%;
+    font-weight: 300;
+}
+.section-d{
+    :not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
+.section-e{
+    padding: 5rem;
+    padding-top: 7rem;
+    height: 88vh;
+}

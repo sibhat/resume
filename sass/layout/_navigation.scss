@@ -1,0 +1,44 @@
+nav,
+.inav{
+    position: fixed;
+    max-width: 24rem;
+    height: 100vh;
+    background-color: #fff;
+    line-height: inherit;
+    color: inherit;
+    border-right: $border-color-gray-light;
+    &__name{
+        height: 22rem;
+        text-align: center;
+        padding-top: 5rem;
+        border-bottom: $border-color-gray-light;
+        text-transform: uppercase;
+        background-color: #fafafa;
+    }
+    &__item{
+        padding-top: 3rem;
+        list-style: none;
+
+    }
+    &__list{
+        font-size: 1.9rem;
+        padding-left: 5.5rem;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+        transition: all .3s;
+
+       a{
+           text-decoration: none;
+           margin-left: 1rem;
+       }
+       &:hover{
+        transform: scale(1.1);
+       }
+       
+    }
+     
+    a{
+        color: #333;
+    }
+
+}
