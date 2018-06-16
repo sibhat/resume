@@ -249,7 +249,7 @@ body {
 
 .page {
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 10rem auto;
   box-shadow: 0 1rem 1rem rgba(53, 50, 50, 0.548);
   padding: 4rem;
   font-size: 1.4rem;
