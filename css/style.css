@@ -393,7 +393,7 @@ body {
       color: rgba(26, 21, 104, 0.815);
       letter-spacing: 0.3rem; }
     .iheader--link img {
-      transition: all .3s; }
+      transition: all 0.3s; }
     @media only screen and (max-width: 37.5em) {
       .iheader--link {
         margin-bottom: 0rem;
