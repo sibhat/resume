@@ -1,16 +1,16 @@
-.main{
-    margin-left: 24rem;
-    @include respond('tab-port'){
-        margin-left: 0;
-    }
+.main {
+	margin-left: 24rem;
+	@include respond("tab-port") {
+		margin-left: 0;
+	}
 }
-.section-a{
-    width: 100%;
-    font-weight: 300;
+.section-a {
+	width: 100%;
+	font-weight: 300;
 }
 
-.section-e{
-    padding: 5rem;
-    padding-top: 7rem;
-    height: 88vh;
+.section-e {
+	padding: 5rem 0rem;
+	padding-top: 7rem;
+	height: 88vh;
 }

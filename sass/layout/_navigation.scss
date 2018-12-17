@@ -1,102 +1,98 @@
-.inav{
-    position: fixed;
-    max-width: 24rem;
-    height: 100vh;
-    background-color: #fff;
-    line-height: inherit;
-    color: inherit;
-    border-right: $border-color-gray-light;
-    z-index: 1;
+.inav {
+	position: fixed;
+	width: 24rem;
+	height: 100vh;
+	background-color: #fff;
+	line-height: inherit;
+	color: inherit;
+	border-right: $border-color-gray-light;
+	z-index: 1;
 
-    @include respond('tab-port'){
-        display: none;
-    }
-    
-    &__name{
-        height: 22rem;
-        text-align: center;
-        padding-top: 5rem;
-        border-bottom: $border-color-gray-light;
-        text-transform: uppercase;
-        background-color: #fafafa;
-    }
-    &__item{
-        padding-top: 3rem;
-        list-style: none;
+	@include respond("tab-port") {
+		display: none;
+	}
 
-    }
-    &__list{
-        font-size: 1.9rem;
-        padding-left: 5.5rem;
-        padding-top: 1.3rem;
-        padding-bottom: 1.3rem;
-        transition: all .3s;
+	&__name {
+		height: 22rem;
+		text-align: center;
+		padding-top: 5rem;
+		border-bottom: $border-color-gray-light;
+		text-transform: uppercase;
+		background-color: #fafafa;
+	}
+	&__item {
+		padding-top: 3rem;
+		list-style: none;
+	}
+	&__list {
+		font-size: 1.9rem;
+		padding-left: 5.5rem;
+		padding-top: 1.3rem;
+		padding-bottom: 1.3rem;
+		transition: all 0.3s;
 
-       a{
-           text-decoration: none;
-           margin-left: 1rem;
-       }
-       &:hover{
-        transform: scale(1.1);
-       }
-       
-    }
-     
-    a{
-        color: #333;
-    }
+		a {
+			text-decoration: none;
+			margin-left: 1rem;
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
 
+	a {
+		color: #333;
+	}
 }
-.nav__humberger{
-    display: none;
-    height: 7rem;
-    width: 7rem;
-    background-color: white;
-    border-radius: 50%;
-    top: 3%;
-    right: 6%;
-    box-shadow: 0 1rem 1rem rgba(6, 134, 128, 0.123);
-    z-index: 20;
-    text-align: center;
-    @include respond('tab-port'){
-        display: inline-block;
-        position: fixed;
-    }
-    &:hover{
-        cursor: pointer;
-    }
+.nav__humberger {
+	display: none;
+	height: 7rem;
+	width: 7rem;
+	background-color: white;
+	border-radius: 50%;
+	top: 3%;
+	right: 6%;
+	box-shadow: 0 1rem 1rem rgba(6, 134, 128, 0.123);
+	z-index: 20;
+	text-align: center;
+	@include respond("tab-port") {
+		display: inline-block;
+		position: fixed;
+	}
+	&:hover {
+		cursor: pointer;
+	}
 
-    &__line{
-        margin-top: 3.5rem;
-    }
+	&__line {
+		margin-top: 3.5rem;
+	}
 
-    &__line,
-    &__line::before,
-    &__line::after{
-        width: 3rem;
-        height: 2px;
-        background-color: #333;
-        display: inline-block;
-        transition: all .4s;      
-        
-    }
+	&__line,
+	&__line::before,
+	&__line::after {
+		width: 3rem;
+		height: 2px;
+		background-color: #333;
+		display: inline-block;
+		transition: all 0.4s;
+	}
 
-    &:hover  &__line::before{
-        margin: 0.5rem 0;
-    }
+	&:hover &__line::before {
+		margin: 0.5rem 0;
+	}
 
-    &__line::before,
-    &__line::after{
-        position: relative;
-        content: '';
-        left: 0;
-    }
+	&__line::before,
+	&__line::after {
+		position: relative;
+		content: "";
+		left: 0;
+	}
 
-    &__line::before{
-        top: -2rem;
-    }
+	&__line::before {
+		top: -2rem;
+	}
 
-    &__line::after{
-        bottom: 1.5rem;
-    }
+	&__line::after {
+		bottom: 1.5rem;
+	}
 }

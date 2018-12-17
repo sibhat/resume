@@ -53,7 +53,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   font-size: 62.5%;
   line-height: 1.5;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal; }
   @media only screen and (max-width: 75em) {
     html {
@@ -61,9 +61,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -82,30 +79,46 @@ body {
   line-height: 1.7;
   color: black; }
 
-.iheading__primary {
-  font-size: 5rem;
-  font-weight: 300;
+.heading__primary {
+  font-size: 3.6rem;
+  font-weight: 100;
   line-height: 1.5;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  text-transform: uppercase; }
   @media only screen and (max-width: 75em) {
-    .iheading__primary {
-      font-size: 4.5rem; } }
+    .heading__primary {
+      font-size: 3.5rem; } }
   @media only screen and (max-width: 56.25em) {
-    .iheading__primary {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .iheading__primary {
+    .heading__primary {
       font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading__primary {
+      font-size: 2.5rem; } }
 
 .heading__secondary {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 200;
   line-height: 1.1;
   margin: 1rem 0; }
+  @media only screen and (max-width: 75em) {
+    .heading__secondary {
+      font-size: 2.3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading__secondary {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading__secondary {
+      font-size: 1.7rem; } }
 
 .heading__teritary {
   font-size: 1.4rem;
   font-weight: 400; }
+  @media only screen and (max-width: 75em) {
+    .heading__teritary {
+      font-size: 1.3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading__teritary {
+      font-size: 1rem; } }
 
 .title {
   font-size: 2.6rem;
@@ -225,10 +238,9 @@ body {
 .section__header {
   width: 100%;
   background-color: rgba(26, 21, 104, 0.815);
-  color: white;
+  color: #ffffff;
   padding: 1rem 3rem; }
   .section__header h1 {
-    font-size: 5rem;
     font-weight: 100;
     text-transform: uppercase; }
 
@@ -299,7 +311,7 @@ body {
 .skill {
   margin: 0 auto;
   background-color: white;
-  padding: 3rem 2rem;
+  padding: 2rem;
   margin-bottom: 3rem; }
   .skill__header {
     width: 100%;
@@ -313,15 +325,15 @@ body {
     padding-top: 2rem;
     margin-bottom: 0 !important; }
   .skill__logo {
-    height: 100px;
+    height: 50px;
     margin-bottom: 0 !important;
-    height: 7rem; }
+    height: 30px; }
     @media only screen and (max-width: 56.25em) {
       .skill__logo {
         height: 5rem;
         width: 5rem; } }
   .skill__name {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin: 0;
     margin-top: 1rem; }
   .skill__item {
@@ -391,7 +403,7 @@ body {
 
 .inav {
   position: fixed;
-  max-width: 24rem;
+  width: 24rem;
   height: 100vh;
   background-color: #fff;
   line-height: inherit;
@@ -416,7 +428,7 @@ body {
     padding-left: 5.5rem;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
-    transition: all .3s; }
+    transition: all 0.3s; }
     .inav__list a {
       text-decoration: none;
       margin-left: 1rem; }
@@ -449,12 +461,12 @@ body {
     height: 2px;
     background-color: #333;
     display: inline-block;
-    transition: all .4s; }
+    transition: all 0.4s; }
   .nav__humberger:hover .nav__humberger__line::before {
     margin: 0.5rem 0; }
   .nav__humberger__line::before, .nav__humberger__line::after {
     position: relative;
-    content: '';
+    content: "";
     left: 0; }
   .nav__humberger__line::before {
     top: -2rem; }
@@ -472,6 +484,6 @@ body {
   font-weight: 300; }
 
 .section-e {
-  padding: 5rem;
+  padding: 5rem 0rem;
   padding-top: 7rem;
   height: 88vh; }

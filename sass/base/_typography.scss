@@ -1,82 +1,96 @@
 body {
-    // font-family: "Lato", sans-serif;
-    // font-weight: 400;
-    line-height: 1.7;
-    color: black;
+	// font-family: "Lato", sans-serif;
+	// font-weight: 400;
+	line-height: 1.7;
+	color: black;
 }
-.iheading__primary{
-    font-size: 5rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 1rem 0;
+.heading__primary {
+	font-size: 3.6rem;
+	font-weight: 100;
+	line-height: 1.5;
+	margin: 1rem 0;
+	text-transform: uppercase;
 
-    @include respond('tab-land'){
-        font-size: 4.5rem;
-    }
-    @include respond('tab-port'){
-        font-size: 4rem;
-    }
-    @include respond('phone'){
-        font-size: 3rem;
-    }
+	@include respond("tab-land") {
+		font-size: 3.5rem;
+	}
+	@include respond("tab-port") {
+		font-size: 3rem;
+	}
+	@include respond("phone") {
+		font-size: 2.5rem;
+	}
 }
-.heading__secondary{
-    font-size: 3.5rem;
-    font-weight: 200;
-    line-height: 1.1;
-    margin: 1rem 0;
+.heading__secondary {
+	font-size: 2.5rem;
+	font-weight: 200;
+	line-height: 1.1;
+	margin: 1rem 0;
+	@include respond("tab-land") {
+		font-size: 2.3rem;
+	}
+	@include respond("tab-port") {
+		font-size: 2rem;
+	}
+	@include respond("phone") {
+		font-size: 1.7rem;
+	}
 }
-.heading__teritary{
-    font-size: 1.4rem;
-    font-weight: 400;
+.heading__teritary {
+	font-size: 1.4rem;
+	font-weight: 400;
+	@include respond("tab-land") {
+		font-size: 1.3rem;
+	}
+	@include respond("phone") {
+		font-size: 1rem;
+	}
 }
 
-.title{
-    font-size: 2.6rem;
-    text-transform: capitalize;
-    color: rgb(90, 66, 6);
-    border-left: 0.5rem solid rgb(90,66,6);
-    padding-left: 1.5rem;
-    font-weight: 700;
-    font-size: 3.2rem;
-    @include respond('tab-port'){
-        font-size: 2.6rem;
-        letter-spacing: 0.102rem;
-    }
+.title {
+	font-size: 2.6rem;
+	text-transform: capitalize;
+	color: rgb(90, 66, 6);
+	border-left: 0.5rem solid rgb(90, 66, 6);
+	padding-left: 1.5rem;
+	font-weight: 700;
+	font-size: 3.2rem;
+	@include respond("tab-port") {
+		font-size: 2.6rem;
+		letter-spacing: 0.102rem;
+	}
 
-    // border-left: 5px solid #795548;
-    // color: #795548;
-    // font-size: 125%;
-    // font-weight: 400;
-    // margin: 20px 0;
-    // padding-left: 1.5rem;
+	// border-left: 5px solid #795548;
+	// color: #795548;
+	// font-size: 125%;
+	// font-weight: 400;
+	// margin: 20px 0;
+	// padding-left: 1.5rem;
 }
-.paragaph{
-    font-size: 2.5rem;
-    margin-bottom: 2.3rem;
-    @include respond('tab-port'){
-        font-size: 2rem;
-        letter-spacing: 0.12rem;
-        font-weight: 400;
-    }
+.paragaph {
+	font-size: 2.5rem;
+	margin-bottom: 2.3rem;
+	@include respond("tab-port") {
+		font-size: 2rem;
+		letter-spacing: 0.12rem;
+		font-weight: 400;
+	}
 }
-.slogen{
-    font-size: 2.5rem;
-    font-weight: 500;
-    @include respond('tab-port'){
-        font-size: 2.3rem;
-        letter-spacing: 0.12rem;
-    }
+.slogen {
+	font-size: 2.5rem;
+	font-weight: 500;
+	@include respond("tab-port") {
+		font-size: 2.3rem;
+		letter-spacing: 0.12rem;
+	}
 }
 .teal-text {
-    color: #009688 !important;
+	color: #009688 !important;
 }
 .link,
 .link:link,
-.link:visited{
-    font-size: 2rem;
-    color: #009688 !important;
-    text-decoration: none;
-
+.link:visited {
+	font-size: 2rem;
+	color: #009688 !important;
+	text-decoration: none;
 }
-
