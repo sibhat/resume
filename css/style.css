@@ -404,13 +404,14 @@ body {
 
 .inav {
   position: fixed;
-  width: 24rem;
+  width: 5rem;
   height: 100vh;
   background-color: #fff;
   line-height: inherit;
   color: inherit;
   border-right: 1px solid #ddd;
-  z-index: 1; }
+  z-index: 1;
+  transition: width 0.3s ease-in-out; }
   @media only screen and (max-width: 56.25em) {
     .inav {
       display: none; } }
@@ -420,11 +421,13 @@ body {
     padding-top: 5rem;
     border-bottom: 1px solid #ddd;
     text-transform: uppercase;
-    background-color: #fafafa; }
+    background-color: #fafafa;
+    opacity: 0; }
   .inav__item {
     padding-top: 3rem;
     list-style: none;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0; }
   .inav__list {
     font-size: 1.9rem;
     padding-left: 5.5rem;
@@ -439,6 +442,15 @@ body {
       color: #333; }
       .inav__list a:hover {
         transform: scale(1.1); }
+  .inav:hover {
+    width: 24rem; }
+  .inav:hover .main {
+    margin-left: 24rem !important; }
+  .inav:hover .inav__name,
+  .inav:hover .inav__item {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.25s; }
 
 .nav__humberger {
   display: none;
@@ -477,7 +489,7 @@ body {
     bottom: 1.5rem; }
 
 .main {
-  margin-left: 24rem; }
+  margin-left: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .main {
       margin-left: 0; } }
