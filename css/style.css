@@ -240,7 +240,8 @@ body {
   width: 100%;
   background-color: rgba(26, 21, 104, 0.815);
   color: #ffffff;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  transition: 0.3s ease-in-out; }
   .section__header h1 {
     font-weight: 100;
     text-transform: uppercase; }
@@ -445,8 +446,9 @@ body {
         transform: scale(1.1); }
   .inav:hover {
     width: 24rem; }
-  .inav:hover ~ main {
-    margin-left: 24rem !important; }
+  .inav:hover ~ main .section__header {
+    transition: 0.3s ease-in-out;
+    padding-left: 24rem !important; }
   .inav:hover .inav__name,
   .inav:hover .inav__item {
     opacity: 1;

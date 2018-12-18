@@ -51,8 +51,9 @@
 	&:hover {
 		width: 24rem;
 	}
-	&:hover ~ main {
-		margin-left: 24rem !important;
+	&:hover ~ main .section__header {
+		transition: 0.3s ease-in-out;
+		padding-left: 24rem !important;
 	}
 	&:hover &__name,
 	&:hover &__item {
