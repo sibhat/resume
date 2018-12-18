@@ -23,25 +23,25 @@
 	&__item {
 		padding-top: 3rem;
 		list-style: none;
+		overflow: hidden;
 	}
 	&__list {
 		font-size: 1.9rem;
 		padding-left: 5.5rem;
 		padding-top: 1.3rem;
 		padding-bottom: 1.3rem;
+		background: #fafafa;
+		margin: 11px 0px;
 		transition: all 0.3s;
 
 		a {
 			text-decoration: none;
 			margin-left: 1rem;
+			color: #333;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
-
-	a {
-		color: #333;
 	}
 }
 .nav__humberger {

@@ -54,7 +54,8 @@ html {
   font-size: 62.5%;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -422,20 +423,22 @@ body {
     background-color: #fafafa; }
   .inav__item {
     padding-top: 3rem;
-    list-style: none; }
+    list-style: none;
+    overflow: hidden; }
   .inav__list {
     font-size: 1.9rem;
     padding-left: 5.5rem;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
+    background: #fafafa;
+    margin: 11px 0px;
     transition: all 0.3s; }
     .inav__list a {
       text-decoration: none;
-      margin-left: 1rem; }
-    .inav__list:hover {
-      transform: scale(1.1); }
-  .inav a {
-    color: #333; }
+      margin-left: 1rem;
+      color: #333; }
+      .inav__list a:hover {
+        transform: scale(1.1); }
 
 .nav__humberger {
   display: none;

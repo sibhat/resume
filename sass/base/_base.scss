@@ -12,6 +12,7 @@ html {
 	line-height: 1.5;
 	font-family: "Roboto", sans-serif;
 	font-weight: normal;
+	scroll-behavior: smooth;
 	@include respond(tab-land) {
 		// width < 1200?
 		font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
