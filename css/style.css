@@ -94,7 +94,8 @@ body {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading__primary {
-      font-size: 2.5rem; } }
+      font-size: 2rem;
+      line-height: 2.5; } }
 
 .heading__secondary {
   font-size: 2.5rem;
@@ -219,21 +220,30 @@ body {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s; }
   .card__photo {
-    width: 100%; }
+    width: 91%;
+    margin: auto;
+    height: 40%;
+    position: relative;
+    top: -18px;
+    box-shadow: 0px 5px 10px rgba(99, 99, 99, 0.2);
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden; }
     .card__photo img {
       width: 100%; }
   .card__body {
     width: 100%;
     padding: 3rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    padding-top: 0; }
     .card__body p {
       font-size: 1.8rem; }
     .card__body--header {
       display: flex;
       justify-content: space-between; }
   .card:hover {
-    box-shadow: 0 1rem 1rem rgba(56, 56, 56, 0.6);
-    transform: translateY(1rem); }
+    box-shadow: 0 1rem 1rem rgba(56, 56, 56, 0.4);
+    transform: translateY(0.5rem); }
 
 .section__header {
   width: 100%;
@@ -431,19 +441,21 @@ body {
     opacity: 0; }
   .inav__list {
     font-size: 1.5rem;
-    padding-left: 5.5rem;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    padding: 1.3rem 5rem;
     background: #fafafa;
     margin: 11px 0px;
-    transition: all 0.3s; }
+    height: 5rem;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer; }
+    .inav__list:hover a {
+      font-size: 1.6rem; }
     .inav__list a {
       text-decoration: none;
       margin-left: 1rem;
-      color: #333; }
-      .inav__list a:hover {
-        transform: scale(1.1); }
-  .inav:hover {
+      color: #333;
+      transition: all 0.3s; }
+  .inav:hover, .inav:focus {
     width: 24rem; }
   .inav:hover ~ main .section__header {
     transition: 0.3s ease-in-out;

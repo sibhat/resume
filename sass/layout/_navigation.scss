@@ -32,23 +32,28 @@
 
 	&__list {
 		font-size: 1.5rem;
-		padding-left: 5.5rem;
-		padding-top: 1.3rem;
-		padding-bottom: 1.3rem;
+		// padding-left: 5.5rem;
+		// padding-top: 1.3rem;
+		// padding-bottom: 1.3rem;
+		padding: 1.3rem 5rem;
 		background: #fafafa;
 		margin: 11px 0px;
+		height: 5rem;
 		transition: all 0.3s;
-
+		box-sizing: border-box;
+		cursor: pointer;
+		&:hover a {
+			font-size: 1.6rem;
+		}
 		a {
 			text-decoration: none;
 			margin-left: 1rem;
 			color: #333;
-			&:hover {
-				transform: scale(1.1);
-			}
+			transition: all 0.3s;
 		}
 	}
-	&:hover {
+	&:hover,
+	&:focus {
 		width: 24rem;
 	}
 	&:hover ~ main .section__header {
