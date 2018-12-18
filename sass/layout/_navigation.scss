@@ -1,5 +1,6 @@
 .inav {
 	position: fixed;
+	top: 0;
 	width: 5rem;
 	height: 100vh;
 	background-color: #fff;
@@ -30,7 +31,7 @@
 	}
 
 	&__list {
-		font-size: 1.9rem;
+		font-size: 1.5rem;
 		padding-left: 5.5rem;
 		padding-top: 1.3rem;
 		padding-bottom: 1.3rem;
@@ -50,7 +51,7 @@
 	&:hover {
 		width: 24rem;
 	}
-	&:hover .main {
+	&:hover ~ main {
 		margin-left: 24rem !important;
 	}
 	&:hover &__name,
