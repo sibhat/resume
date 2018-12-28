@@ -41,9 +41,13 @@
 		border-bottom: 0.2rem solid black;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin-bottom: 2rem;
 		&--name {
-			padding-left: 4rem;
+			// padding-left: 4rem;
+		}
+		&--logo {
+			display: none;
 		}
 	}
 	&__body {
