@@ -20,29 +20,32 @@ class ContactUs extends Component {
 	};
 	render() {
 		return (
-			<section class="section-e" id="contact">
-				<div class="section__header">
-					<h1 class="heading__primary">contact</h1>
+			<section className="section-e" id="contact">
+				<div className="section__header">
+					<h1 className="heading__primary">contact</h1>
 				</div>
-				<div class="content">
+				<div className="content">
 					<a
-						href="#"
-						class="contact__link block u-margin-bottom-medium"
+						href="#/"
+						className="contact__link block u-margin-bottom-medium"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						sibhat.temelso@gmail.com
 					</a>
 					<a
 						href="https://github.com/sibhat"
-						class="contact__link block u-margin-bottom-medium"
+						className="contact__link block u-margin-bottom-medium"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						github.com/sibhat
 					</a>
 					<a
 						href="https://www.linkedin.com/in/sibhat007"
-						class="contact__link block"
+						className="contact__link block"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						linkedin.com/in/sibhat007
 					</a>
