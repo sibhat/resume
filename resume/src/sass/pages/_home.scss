@@ -1,0 +1,20 @@
+.main {
+	margin-left: 3rem;
+	transition: 0.3s ease-in-out;
+	@include respond("tab-port") {
+		margin-left: 0;
+	}
+}
+.section-a {
+	width: 100%;
+	font-weight: 300;
+}
+
+.section-e {
+	padding: 5rem 0px;
+	padding-top: 7rem;
+	height: 88vh;
+	div {
+		padding: 0px 5rem;
+	}
+}
