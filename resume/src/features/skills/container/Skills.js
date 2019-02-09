@@ -17,7 +17,7 @@ class Skills extends Component {
 								Front-End
 							</h2>
 						</div>
-						<div className="skill__body">
+						{/* <div className="skill__body">
 							<div className="skill__item">
 								<img
 									src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
@@ -59,7 +59,7 @@ class Skills extends Component {
 								/>
 								<h3 className="skill__name">jQuery</h3>
 							</div>
-						</div>
+						</div> */}
 					</div>
 					<div className="skill">
 						<div className="skill__header">
@@ -67,7 +67,7 @@ class Skills extends Component {
 								Back-End
 							</h2>
 						</div>
-						<div className="skill__body">
+						{/* <div className="skill__body">
 							<div className="skill__item">
 								<img
 									src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
@@ -119,7 +119,7 @@ class Skills extends Component {
 								/>
 								<h3 className="skill__name">Node</h3>
 							</div>
-						</div>
+						</div> */}
 					</div>
 					<div className="skill">
 						<div className="skill__header">
@@ -127,7 +127,7 @@ class Skills extends Component {
 								other
 							</h2>
 						</div>
-						<div className="skill__body">
+						{/* <div className="skill__body">
 							<div className="skill__item">
 								<img
 									src="img/photoshop-cc.svg"
@@ -160,7 +160,7 @@ class Skills extends Component {
 								/>
 								<h3 className="skill__name">Premier Pro</h3>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

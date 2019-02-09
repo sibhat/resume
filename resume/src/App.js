@@ -4,7 +4,7 @@ import HeaderContainer from "./features/header/container/HeaderContainer";
 import "./sass/main.scss";
 import ExperienceContainer from "./features/experience/container/Experience";
 import ProjectContainer from "./features/projects/container/ProjectsContainer";
-import Skills from "./features/skills/container/Skills";
+import EDitSkills from "./features/skills/container/EditSkills";
 import ContactUs from "./features/contact/container/ContactUs";
 // import firebase from "./firebaseConfig";
 
@@ -17,7 +17,7 @@ class App extends Component {
 					<HeaderContainer />
 					<ExperienceContainer />
 					<ProjectContainer />
-					<Skills />
+					<EDitSkills />
 					<ContactUs />
 				</main>
 			</div>
