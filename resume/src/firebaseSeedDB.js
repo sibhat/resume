@@ -82,3 +82,16 @@ function write() {
 }
 
 write();
+
+
+// head and tail
+//node = head
+//head = tail
+// tail = node
+//prev = null
+
+//next = node.next
+//node.next = prev
+// node = next
+//prev = node
+
