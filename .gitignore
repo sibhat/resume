@@ -17,3 +17,4 @@ gen
 resume/src/features/contact/store/
 resume/src/features/experience/store/
 resume/src/features/projects/store/
+node_modules
