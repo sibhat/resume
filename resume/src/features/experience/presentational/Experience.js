@@ -1,8 +1,8 @@
 import React from "react";
 
 const Experience = props => {
-	let pages = props.experiences.map(job => (
-		<div className="page" key={job.title}>
+	let pages = props.experiences.map((job, index) => (
+		<div className="page" key={index}>
 			<div className="page__header">
 				<div className="page__header--logo">&nbsp;</div>
 				<div className="page__header--name">
@@ -14,14 +14,14 @@ const Experience = props => {
 			</div>
 			<div className="page__body">
 				<ul className="page__list">
-					{job.skills.map(item => (
-						<li key={item}>{item} </li>
+					{job.skills.map((item, index) => (
+						<li key={index}>{item} </li>
 					))}
 				</ul>
 			</div>
 			<div className="page__footer">
 				<p className="page__footer--text">
-					{job.start_date} {job.end_date} | {job.location}
+					{job.startDate}  =>  {job.endDate} | {job.location}
 				</p>
 			</div>
 		</div>
