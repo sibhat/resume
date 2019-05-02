@@ -36,7 +36,6 @@ const Header = props => (
 			</div>
 			<div className="section-a__title">
 				<p className="title u-margin-bottom-small">{props.mission}</p>
-
 				<p className="paragaph">{props.description}</p>
 				<p className="slogen">{props.slogen} </p>
 			</div>
