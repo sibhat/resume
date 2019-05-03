@@ -31,7 +31,7 @@ const EducationPresentational = props => {
 		</div>
 	));
 	return (
-		<section className="section-b" id="experience">
+		<section className="section-b" id="education">
 			<div className="section__header">
 				<h1 className="heading__primary">Education</h1>
 			</div>

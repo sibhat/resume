@@ -37,25 +37,30 @@ class Nav extends Component {
                             </a>
                         </li>
                         <li className="inav__list">
+                            <i className="fa fa-code"/>
+                            <a href={"#projects"}>Projects</a>
+                        </li>
+                        <li className="inav__list">
                             <i className="fas fa-laptop"/>
                             <a href={"#experience"}>Experience</a>
                         </li>
                         <li className="inav__list">
-                            <i className="fa fa-code"/>
-                            <a href={"#projects"}>Projects</a>
+                            <i className="fas fa-paper-plane"/>
+                            <a href={"#education"}>Education</a>
                         </li>
                         <li className="inav__list">
                             <i className="fa fa-chess-knight"/>
                             <a href={"#skills"}>Skills</a>
                         </li>
+
                         <li className="inav__list">
                             <i className="fas fa-paper-plane"/>
                             <a href={"#contact"}>Contact</a>
                         </li>
-                        <li className="inav__list">
-                            <i className="fas fa-file-code"/>
-                            <a href={"#resume"}>Resume</a>
-                        </li>
+                        {/*<li className="inav__list">*/}
+                            {/*<i className="fas fa-file-code"/>*/}
+                            {/*<a href={"#resume"}>Resume</a>*/}
+                        {/*</li>*/}
                     </div>
                 </nav>
                 <nav className="nav__humberger">
