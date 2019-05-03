@@ -52,6 +52,9 @@
 	}
 	&__body {
 		margin-bottom: 5rem;
+		p {
+			font-size: 1.3rem;
+		}
 	}
 	&__info {
 		margin-bottom: 2rem;
@@ -64,7 +67,7 @@
 	}
 	&__list {
 		margin-bottom: 2rem;
-		font-weight: 700;
+		font-weight: 500;
 		ul {
 			padding-left: 2rem;
 			font-weight: 400;
@@ -110,7 +113,6 @@
 		margin-bottom: 0 !important;
 	}
 	&__logo {
-		height: 50px;
 		// padding-bottom: 2rem;
 		margin-bottom: 0 !important;
 		height: 30px;

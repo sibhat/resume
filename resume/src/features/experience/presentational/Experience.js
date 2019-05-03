@@ -12,6 +12,9 @@ const Experience = props => {
 				</div>
 				<h4 className="heading__teritary">{job.companyName}</h4>
 			</div>
+            <div className="page__body u-margin-bottom-small">
+                <p>{job.description}</p>
+            </div>
 			<div className="page__body">
 				<ul className="page__list">
 					{job.skills.map((item, index) => (
@@ -21,7 +24,7 @@ const Experience = props => {
 			</div>
 			<div className="page__footer">
 				<p className="page__footer--text">
-					{job.startDate}  =>  {job.endDate} | {job.location}
+					{job.startDate} - {job.endDate} | {job.location}
 				</p>
 			</div>
 		</div>
