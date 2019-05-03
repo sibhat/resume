@@ -6,20 +6,21 @@ const Header = props => (
 				<div className="iheader__img">
 					<img className="logo" src={props.logoImg} alt={""} />
 				</div>
-				<div className="iheader__text">
-					<h1 className="heading__primary">
-						I want to
-						<span className="teal"> develop a website </span>
-						<br />
-						<span className="underline" />
-					</h1>
+				{/*<div className="iheader__text">*/}
+					{/*<h1 className="heading__primary">*/}
+						{/*I want to*/}
+						{/*<span className="teal"> develop a website </span>*/}
+						{/*<br />*/}
+						{/*<span className="underline" />*/}
+					{/*</h1>*/}
+                    <p className="title u-margin-bottom-big u-margin-top-big">{props.mission}</p>
 
-					<a href="#contact" className="btn btn--primary teal">
+                    <a href={"#contact"} className="btn btn--primary teal">
 						Have an awesome Idea?
 					</a>
-				</div>
+				{/*</div>*/}
 				<span className="iheader--link">
-					<a href="#about" className="svg-down">
+					<a href={"#about"} className="svg-down">
 						Learn more about what I do
 					</a>
 					<img
@@ -35,7 +36,6 @@ const Header = props => (
 				<h1 className="heading__primary">About</h1>
 			</div>
 			<div className="section-a__title">
-				<p className="title u-margin-bottom-small">{props.mission}</p>
 				<p className="paragaph">{props.description}</p>
 				<p className="slogen">{props.slogen} </p>
 			</div>
