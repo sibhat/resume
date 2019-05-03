@@ -17,8 +17,7 @@ const SkillPresentational = props => {
                     <div className="skill__body" >
                         {
                             !props.isLoading &&
-                            props.skills.map((skill, index) => (
-
+                            Object.entries(props.skills[1][1]).map((skill, index) => (
                                     <div className="skill__item" key={index}>
                                         <img
                                             src={skill[1]}
@@ -42,8 +41,7 @@ const SkillPresentational = props => {
                     <div className="skill__body" >
                         {
                             !props.isLoading &&
-                            props.skills.map((skill, index) => (
-
+                            Object.entries(props.skills[0][1]).map((skill, index) => (
                                     <div className="skill__item" key={index}>
                                         <img
                                             src={skill[1]}
@@ -66,8 +64,7 @@ const SkillPresentational = props => {
                     <div className="skill__body" >
                         {
                             !props.isLoading &&
-                            props.skills.map((skill, index) => (
-
+                            Object.entries(props.skills[2][1]).map((skill, index) => (
                                     <div className="skill__item" key={index}>
                                         <img
                                             src={skill[1]}
