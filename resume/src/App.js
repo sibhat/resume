@@ -6,6 +6,7 @@ import ExperienceContainer from "./features/experience/container/Experience";
 import ProjectContainer from "./features/projects/container/ProjectsContainer";
 import Skill from "./features/skills/container/Skills";
 import ContactUs from "./features/contact/container/ContactUs";
+import Education from "./features/education/container/Education";
 
 class App extends Component {
     render() {
@@ -13,8 +14,9 @@ class App extends Component {
                 < Nav/>
                 < main className="main">
                     < HeaderContainer/>
-                    < ExperienceContainer/>
                     < ProjectContainer/>
+                    < ExperienceContainer/>
+                    < Education/>
                     < Skill/>
                     < ContactUs/>
                 </main>
