@@ -20,7 +20,7 @@ const Project = props => {
 					</p>
 				</div>
 				<div className="card__body--info">
-					<p className="paragaph">{project.description}</p>
+					<p className="paragaph">{project.headline}</p>
 				</div>
 				<ul className="card__list">
 					Stack:
